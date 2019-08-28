@@ -8,3 +8,9 @@ h1 {
 p {
   color: green;
 }
+
+.laatikko {
+  margin: 30px;
+  padding: 30px;
+  background-color: white;
+}
