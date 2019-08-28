@@ -3,11 +3,20 @@
   <head>
     <title>Jäsähomma</title>
     <link rel="stylesheet" href="css/styles.css">
+
+    <script>
+      function nappula() {
+        document.getElementById("juttu").innerHTML = "\"Maailmassa ei ole mitään mukavampaa kuin viihtyminen eikä mikään ole helpompaa.\" – Mymmeli"
+      }
+    </script>
   </head>
   <body>
     <div class="laatikko">
       <h1>Muumilaakso</h1>
-      <p>"Maailmassa ei ole mitään mukavampaa kuin viihtyminen eikä mikään ole helpompaa." – Mymmeli</p>
+
+      <button onclick="nappula()">Kerro juttu</button>
+      <p id="juttu"></p>
+
     </div>
   </body>
 </html>
