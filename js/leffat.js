@@ -13,6 +13,10 @@ function hae_elokuva() {
       var vastaus = JSON.parse(xhttp.responseText)
       console.log('vastaus:', vastaus)
       document.getElementById("elokuvan_nimi").innerHTML = vastaus.Title
+
+      var juliste = document.getElementById('juliste')
+      juliste.setAttribute("alt", "Elokuvan juliste")
+      juliste.src = vastaus.Poster
     }
   }
   xhttp.open("GET", "http://www.omdbapi.com/?apikey=a95f3723&t=" + haettu_leffa, true)
