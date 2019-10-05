@@ -22,3 +22,13 @@ function hae_elokuva() {
   xhttp.open("GET", "http://www.omdbapi.com/?apikey=a95f3723&t=" + haettu_leffa, true)
   xhttp.send()
 }
+
+function input_muutos(event) {
+  // Numero 13 on näppäimistön "Enter" nappula
+    if (event.keyCode === 13) {
+      // Peru oletustoiminto
+      event.preventDefault()
+      // Hae elokuva
+      hae_elokuva()
+    }
+}
