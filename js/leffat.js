@@ -13,6 +13,7 @@ function hae_elokuva() {
       var vastaus = JSON.parse(xhttp.responseText)
       console.log('vastaus:', vastaus)
       document.getElementById("elokuvan_nimi").innerHTML = vastaus.Title
+      document.getElementById("elokuvan_kuvaus").innerHTML = vastaus.Plot
 
       var juliste = document.getElementById('juliste')
       juliste.setAttribute("alt", "Elokuvan juliste")
