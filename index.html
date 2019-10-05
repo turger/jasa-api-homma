@@ -3,24 +3,24 @@
   <head>
     <title>Jäsähomma</title>
     <link rel="stylesheet" href="css/styles.css">
-
+    <link href="https://fonts.googleapis.com/css?family=Heebo|Notable&display=swap" rel="stylesheet">
     <script src="js/leffat.js"></script>
   </head>
   <body>
     <div class="laatikko">
       <h1>Muumilaakso</h1>
 
-      <button onclick="nappula()">Kerro juttu</button>
+      <button class="juttu_nappula" onclick="nappula()">Kerro juttu</button>
       <p id="juttu"></p>
 
-      <form>
-        <label for="haettu_elokuva">Elokuvan nimi:</label>
-        <input type="text" class="hae-elokuva" id="haettu_elokuva" onkeypress="input_muutos(event)">
+      <form class="elokuvan_haku">
+        <input type="text" class="hae-elokuva" id="haettu_elokuva" onkeypress="input_muutos(event)" placeholder="Elokuvan nimi">
         <button onclick="hae_elokuva()" type="button" class="otsikkonappi">Hae Elokuva</button>
       </form>
 
       <div class="elokuva">
-        <h2 id="elokuvan_nimi"></h2>
+        <!-- Win emoji picker: https://www.howtogeek.com/351344/how-to-use-windows-10%E2%80%99s-new-emoji-picker-in-any-app/ -->
+        <h2 class="elokuvan_nimi" id="elokuvan_nimi">🤷🤷🤷‍</h2>
         <p id="elokuvan_kuvaus"></p>
         <img id="juliste">
       </div>
