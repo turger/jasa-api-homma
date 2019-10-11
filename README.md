@@ -19,6 +19,8 @@ Jos pitää jakaa jokin urli tai muu kurja copypastettava, niin voidaan perustaa
 ⚠️ Huom! Tämän repon commitit on pilkottu pieniin osiin järjestyksessä, jota voi seurata oppitunneilla.
 
 ### 1. Html + css kertaus
+Tutustutaan (mieluiten Chromella) selainkonsoliin, jonka kautta päästään tutkimaan sivun lähdekoodia ja muita ominaisuuksia. Avaa macilla cmd + shift + C, windowsilla cmd + shift + J tms. Harjoitellaan lähdekoodin muokkaamista. Mennään esimerkiksi Iltalehden sivulle ja testataan otsikoiden vaihtamista.
+
 Tehdään runko tulevalle sovellukselle.  
 - Index.html
 - css/styles.css
